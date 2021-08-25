@@ -17,7 +17,7 @@
         }
         function getData(){
             let domain = guid()+".ccc.cocofhu.com";
-            $.ajax({url:"http://"+domain+":8080/hello?name="+domain,dataType: "json",success:function(result){
+            $.ajax({url:"http://"+domain+":8086/hello?name="+domain,dataType: "json",success:function(result){
                 console.log(result)
                     document.getElementById("isp").innerText = result.ip;
             }});
